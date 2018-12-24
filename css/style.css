@@ -733,18 +733,21 @@ pre[class*="language-"] {
 .home-features__heading {
   text-align: center; }
 
-@media screen and (min-width: 51.875em) {
-  .home-features__list {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr); } }
-
-.home-features__list h3 {
-  text-align: center; }
-
-@media screen and (max-width: 51.8125em) {
-  .home-features__list li:not(:last-child) {
-    margin-bottom: 40px; } }
+.home-features__list {
+  margin-top: 60px; }
+  @media screen and (min-width: 51.875em) {
+    .home-features__list {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(3, 1fr); } }
+  .home-features__list svg {
+    margin: 0 auto 40px;
+    display: block; }
+  .home-features__list h3 {
+    text-align: center; }
+  @media screen and (max-width: 51.8125em) {
+    .home-features__list li:not(:last-child) {
+      margin-bottom: 40px; } }
 
 .home-contribute {
   padding-top: 80px;
